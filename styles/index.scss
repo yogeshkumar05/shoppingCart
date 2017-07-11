@@ -2,10 +2,29 @@
 {
     margin:25px;
 }
-.verticalLine {
-  border-right: 1px solid #ccc;
-  padding-right:10px;
-  
+
+.html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+    font-size: 50px;
+}
+.totalText
+{
+    font-size:25px;
+}
+.subTotal
+{
+    font-size:20px;
+}
+.verticalLine
+{
+    // background-color: #ccc;
+    padding:0;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .horizontalLine
@@ -19,7 +38,7 @@
 
 .editbar
 {
-    margin-top:30px;
+    margin-top:60px;
 }
 
 
@@ -29,9 +48,17 @@
 .row::after {
     content: "";
     clear: both;
-    display: block;
+    display: table;
 }
-/* For desktop: */
+
+
+
+@media only screen and (max-width: 768px) {
+[class*="col-"] {
+    width: 100%;
+}
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -45,14 +72,27 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 50%;
-    }
 
-    .app
+.qtyTextbox
 {
-    margin:5px;
+    width:40px
 }
+
+.totalSection
+{
+    margin-top:75px;
+}
+
+.subTotalSection
+{
+    margin-top: 40px;
+}
+
+.queriesSection
+{
+    margin-top: 20px;
+}
+.infoBar
+{
+    display: block;
 }

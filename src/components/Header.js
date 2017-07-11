@@ -11,7 +11,7 @@ export default class Header extends Component
     render()
     {
         return(
-            <h1>YOUR SHOPPING CART</h1>
+            <div className="header">YOUR SHOPPING BAG</div>
         )
     }
 }

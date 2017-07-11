@@ -12,7 +12,11 @@ export default class Editbar extends Component
     {
         return(
             <div className="editbar">
-                <span className="verticalLine" onClick={this.props.displayModal}>EDIT</span> <span className="verticalLine">REMOVE</span> <span>SAVE FOR LATER</span>
+                <span onClick={this.props.displayModal}>EDIT</span>
+                <span className="verticalLine">|</span>
+                <span>X REMOVE</span> 
+                <span className="verticalLine">|</span>
+                <span>SAVE FOR LATER</span>
             </div>
         )
     }

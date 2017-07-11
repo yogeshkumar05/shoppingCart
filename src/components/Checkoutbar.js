@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import {Button} from 'react-bootstrap';
 
 export default class Checkoutbar extends Component
 {
@@ -17,10 +18,10 @@ export default class Checkoutbar extends Component
                         
                     </div>
                     <div className="col-sm-3 col-md-3 col-lg-3">
-                        CONTINUE SHOPPING
+                        <a href=""><u>CONTINUE SHOPPING</u></a>
                     </div>
                     <div className="col-sm-3 col-md-3 col-lg-3">
-                        <button>CHECKOUT</button>
+                        <Button bsStyle="info" bsSize="large">CHECKOUT</Button>
                     </div>
                 </div>
                 <div className="row">
@@ -28,7 +29,7 @@ export default class Checkoutbar extends Component
                         
                     </div>
                     <div className="col-sm-10 col-md-10 col-lg-10">
-                        Secure chckout. Shopping is always safe & secure
+                        <img src="../../images/lock.jpg"/>Secure chckout. Shopping is always safe & secure
                     </div>
                     
                 </div>

@@ -1,0 +1,25 @@
+{
+    "coupons":
+    [
+        {
+            "code":"JF10",
+            "discountPercent":"10"
+        },
+        {
+            "code":"JF20",
+            "discountPercent":"20"
+        },
+        {
+            "code":"JF30",
+            "discountPercent":"30"
+        },
+        {
+            "code":"JF40",
+            "discountPercent":"40"
+        },
+        {
+            "code":"JF50",
+            "discountPercent":"50"
+        }
+    ]
+}

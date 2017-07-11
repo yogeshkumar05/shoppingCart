@@ -10,8 +10,8 @@
             "hexcode":"#1169BD"
          },
          "p_selected_size":{  
-            "name":"small",
-            "code":"s"
+            "name":"medium",
+            "code":"m"
          },
          "p_available_options":{  
             "colors":[  
@@ -114,8 +114,8 @@
             "hexcode":"#1169BD"
          },
          "p_selected_size":{  
-            "name":"small",
-            "code":"s"
+            "name":"large",
+            "code":"l"
          },
          "p_available_options":{  
             "colors":[  
