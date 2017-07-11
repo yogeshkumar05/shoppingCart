@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {calculateSubTotal, calculateDiscount} from '../util/utilFunctions';
+import {Button} from 'react-bootstrap';
 
 export default class Promotion extends Component
 {
@@ -38,7 +39,7 @@ export default class Promotion extends Component
                     <input type="text" value={this.state.couponText} onChange={this.handleCouponChange}/>
                 </div>
                 <div className="col-sm-3 col-md-3 col-lg-3">
-                    <button onClick={this.applyCoupon}>Apply</button>
+                    <Button bsStyle="default" onClick={this.applyCoupon}>Apply</Button>
                 </div>
             </div>
         )
