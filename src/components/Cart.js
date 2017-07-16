@@ -81,7 +81,7 @@ export default class Cart extends Component {
 
         return (
             <div>
-                <div className="infobar">
+                <div className="info-bar">
                     <Infobar />
                 </div>
                 <div className="horizontalLine"></div>

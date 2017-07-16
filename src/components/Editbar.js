@@ -11,8 +11,8 @@ export default class Editbar extends Component
     render()
     {
         return(
-            <div className="editbar">
-                <span onClick={this.props.displayModal}>EDIT</span>
+            <div >
+                <span className="edit-item" onClick={this.props.displayModal}>EDIT</span>
                 <span className="verticalLine">|</span>
                 <span>X REMOVE</span> 
                 <span className="verticalLine">|</span>

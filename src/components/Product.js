@@ -40,8 +40,8 @@ export default class Product extends Component
             pName=pName.toUpperCase();
 
             let pColor= this.props.data.p_selected_color.name;
-            let firstChar=pColor.slice(0,1).toUpperCase();
-            pColor=firstChar.concat(pColor);
+            let firstChar=pColor.slice(0,1);
+            pColor=pColor.replace(firstChar, firstChar.toUpperCase());
 
             let pSize=this.props.data.p_selected_size.code;
             pSize=pSize.toUpperCase();
@@ -93,7 +93,6 @@ export default class Product extends Component
                         </div>
                         <div>Style #: {pStyle}</div>
                         <div>Color : {pColor}</div>
-                        <Editbar displayModal={this.displayModal} closeModal={this.closeModal}/>
                     </div>
                 );
             productsSize.push(<div>{pSize}</div>)
@@ -129,14 +128,20 @@ export default class Product extends Component
         
         return(
             <div className="row">
-                <div className="col-sm-2 col-md-2 col-lg-2">
+                <div className="product-image">
                     {productsImage}
                 </div>
-                <div className="col-sm-4 col-md-4 col-lg-4">{productsName}</div>
-                <div className="col-sm-2 col-md-2 col-lg-2">{productsSize}</div>
-                <div className="col-sm-2 col-md-2 col-lg-2">{productsQuantity}</div>
-                <div className="col-sm-2 col-md-2 col-lg-2">{productsPrice}</div>
+              
+                <div className="product-name">{productsName}</div>
+                
+              
+                <div className="product-size">{productsSize}</div>
+                <div className="product-quantity">{productsQuantity}</div>
+                <div className="product-price">{productsPrice}</div>
                 <Editmodal data={productDetails} showModal={this.state.showModal} closeModal={this.closeModal} />
+                <div className="editbar">
+                    <Editbar displayModal={this.displayModal} closeModal={this.closeModal}/>
+                </div>
             </div>
            
         )
